@@ -1,0 +1,27 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador de Software",
+    company: "Softdata",
+    description:
+      "Como Responsable del Diseño y Desarrollo de Software, mi labor implica liderar y supervisar todo el ciclo de vida del desarrollo de software, desde la conceptualización y diseño inicial hasta la implementación, pruebas y mantenimiento continuo.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
+
+
+
+
+
